@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: darkslategray;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+    color: darkslategray;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
+    color: tomato;
+}
+
+h2, h3, #box-text p, #box-nav li, #box-text li, dt, dd, figcaption {
+    letter-spacing: 0.025rem;
+}
+
+body.index {
+    background-image: url(img/victor-martin-6lI6YnLC9-k-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    background-color: white;
+    border-bottom: 1px dotted #cccccc;
+    text-align: center;
+}
+
+body.index header {
+    border-bottom-width: 0;
+}
+
+#box-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+#box-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 2rem;
+}
+
+#time {
+    font-weight: 300;
+    height: 20px;
+    letter-spacing: 0.1rem;
+}
+
+#box-menu > div:last-of-type {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    background-color: transparent;
+    border-width: 0;
+    color: darkslategray;
+    font-size: 1.4rem;
+}
+
+#box-nav {
+    display: none;
+    border-top: 2px solid darkslategray;
+    width: 100%;
+}
+
+body.index #box-nav {
+    position: absolute;
+}
+
+#box-nav li {
+    background-color: white;
+    border-bottom: 1px dotted lightslategray;
+    list-style-type: none;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#box-text {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 80vw;
+}
+
+body.index #box-text {
+    align-items: center;
+
+    margin-top: 7.5vh;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 1.25rem;
+    margin-top: 30px;
+    margin-bottom : 20px;
+}
+
+#box-text p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+#box-text p.article {
+    margin-bottom: 10px;
+}
+
+#box-text p.source {
+    font-size: 0.8rem;
+    text-align: right;
+}
+
+#box-text li {
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+
+#box-text li ul {
+    margin-left: 30px;
+}
+
+#box-text li li {
+    font-size: 0.9rem;
+    font-weight: normal;
+    line-height: 1.5;
+    list-style-type: disc;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+#box-text li li:first-of-type {
+    padding-top: 10px;
+}
+
+dd {
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
+.sitename {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+figure {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+figure.video div {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+figure.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding-left: 1px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+#map {
+    width: 440px;
+    height: 518px;
+}
+
+
+#map #rect {
+    fill: #e8f4f8;
+    height: 100%;
+    width: 100%;
+
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-name: circle;
+}
+ 
+#map path {
+    display: inline;
+    fill: lightslategray;
+    fill-opacity: 1;
+    stroke: #fff;
+    stroke-width: 0.5;
+    stroke-opacity: 1;
+}
+
+#map #tokyo {
+    fill: tomato;
+
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: blink;
+    animation-timing-function: linear;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+
+#box-clip {
+    position: fixed;
+    top: calc(40vh - 7.5vh);
+    right: 1px;
+    
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    padding-bottom: 10px;
+    padding-left: 5px;
+
+    transition-duration: 2.5s;
+    transition-property: background-color;
+    transition-timing-function: ease-out;
+
+    animation-duration: 2.5s;
+    animation-name: inset;
+}
+
+#box-clip:hover {
+    background-color: transparent;
+}
+
+.clip {
+     clip-path: url(#myClip);
+}
+
+.thumbnail {
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    float: left;
+    margin-right: 15px;
+}
+
+#box-detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#box-detail img {
+    display: inline-block;
+}
+
+#box-detail picture:first-of-type img {
+    clip-path: circle(50%);
+}
+
+#box-detail picture:last-of-type img {
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+
+    background-color: white;
+    border-top: 1px dotted #cccccc;
+    font-size: 0.9rem;
+    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: sticky;
+    text-align: center;
+    top: 100vh;
+}
+
+body.index footer {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    width: 100vw;
+    border-top-width: 0;
+}
+
+footer div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer div:first-of-type div.box-logo {
+    align-self: center;
+    width: fit-content;
+}
+
+footer div:last-of-type {
+    text-align: left;
+    width: 70vw;    
+}
+
+footer .sitename {
+    border-bottom: 1px solid darkslategray;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+footer .sitename:hover {
+    border-color: tomato;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+footer li {
+    list-style-type: none;
+    margin-bottom: 5px;
+    width: 25%;
+}
+
+footer li ul {
+    display: block;
+    margin-top: 5px;
+}
+
+footer li ul li {
+    width: 100%;
+}
+
+footer li ul li a {
+    font-weight: 400;
+}
+
+
+/* Animation */
+
+@keyframes blink {
+    0% {
+        fill: transparent;
+    }
+    
+    100% {
+        fill: tomato;
+    }
+}
+
+@keyframes circle {
+    0% {
+        clip-path: circle(75%);
+    }
+
+    50% {
+        clip-path: circle(25%);
+    }
+
+    100% {
+        clip-path: circle(75%);
+    }
+}
+
+@keyframes inset {
+    0% {
+        clip-path: inset(50% round 50%);
+    }
+    
+    100% {
+        clip-path: inset(0% round 0%);
+    }
+}
+
+@keyframes polygon {
+    0% {
+        clip-path: polygon(50% 50%, 50% 25%, 50% 50%, 75% 50%, 50% 50%, 50% 75%, 50% 50%, 25% 50%);
+    }
+    100% {
+        clip-path: polygon(0 0, 50% 0, 100% 0, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Responsive */
+
+@media (min-width: 641px) {
+    body.index {
+        background-position: center 70%;
+    }
+
+    #box-text {
+        width: 70vw;
+    }
+
+    div.box-logo:hover {
+        animation-duration: 2.5s;
+        animation-name: rotate;
+    }
+  
+    figure img {
+        animation-duration: 2.5s;
+        animation-name: polygon;
+    }
+
+    figure.video iframe {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    body.index {
+        background-image: url(img/victor-martin-6lI6YnLC9-k-unsplash-m.jpg);
+    }
+
+    div.box-logo {
+        animation-duration: 2.5s;
+        animation-name: rotate;
+    }
+
+    body.index div.box-logo {
+        animation: none;
+    }
+
+    #box-clip #myClip {
+        transform: scale(0.7) translate(2px, 3px);
+    }
+
+    #map {
+        width: calc(440px * 0.75);
+        height: calc(518px * 0.75);
+    }
+
+    #map path {
+        transform: scale(0.75);
+    }
+
+    #box-detail picture {        
+        transform: scale(0.85);
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 20px;
+
+        padding: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    footer > div > ul {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    footer li {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer li ul li {
+        display: inline;
+    }
+
+    footer li ul li::after {
+        content: "•";
+        margin-left: 3px;
+    }
+
+    footer li ul li:last-of-type::after {
+        content: "";
+    }
+}
