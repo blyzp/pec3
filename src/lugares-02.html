@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="fontawesome/css/fontawesome.css">
     <link rel="stylesheet" href="fontawesome/css/solid.css">
-    <script type="module" src="app.js"></script>
+    <script async type="module" src="app.js"></script>
 </head>
 <body>
     <header>
@@ -62,11 +62,11 @@
             <div id="box-detail">
                 <picture>
                     <source srcset="img/detalle/09.jpg?as=avif" type="image/avif">
-                    <img src="img/detalle/09.jpg" alt="Seiyōken">
+                    <img src="img/detalle/09.jpg" alt="Seiyōken" loading="lazy">
                 </picture>
                 <picture>
                     <source srcset="img/detalle/10.jpg?as=webp" type="image/webp">
-                    <img src="img/detalle/10.jpg" alt="Cerezos en flor">
+                    <img src="img/detalle/10.jpg" alt="Cerezos en flor" loading="lazy">
                 </picture>
             </div>
             <h3>Atracciones</h3>
@@ -87,8 +87,8 @@
             </ul>
             <p class="source"><i class="fa-solid fa-angles-right"></i> <cite><a href="https://es.wikipedia.org/w/index.php?title=Parque_Ueno&oldid=149839313">Parque Ueno</a></cite> (2023)</p>
             <figure class="video">
-                <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NZkili1sHi8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div>                    
+                    <iframe frameborder="0" class="lazyload" allowfullscreen="" data-src="https://www.youtube.com/embed/NZkili1sHi8"></iframe>
                 </div>
                 <figcaption>Estanque Shinobazu durante una mañana de otoño</figcaption>
             </figure>

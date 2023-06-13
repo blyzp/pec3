@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="fontawesome/css/fontawesome.css">
     <link rel="stylesheet" href="fontawesome/css/solid.css">
-    <script type="module" src="app.js"></script>
+    <script async type="module" src="app.js"></script>
 </head>
 <body>
     <header>
@@ -62,11 +62,11 @@
             <div id="box-detail">
                 <picture>
                     <source srcset="img/detalle/11.jpg?as=avif" type="image/avif">
-                    <img src="img/detalle/11.jpg" alt="Torre de Tokio, 1961">
+                    <img src="img/detalle/11.jpg" alt="Torre de Tokio, 1961" loading="lazy">
                 </picture>
                 <picture>                    
                     <source srcset="img/detalle/12.jpg?as=webp" type="image/webp">
-                    <img src="img/detalle/12.jpg" alt="Torre de Tokio, 2023">
+                    <img src="img/detalle/12.jpg" alt="Torre de Tokio, 2023" loading="lazy">
                 </picture>
             </div>
             <h3>Uso</h3>
@@ -99,8 +99,8 @@
             </ul>
             <p class="source"><i class="fa-solid fa-angles-right"></i> <cite><a href="https://es.wikipedia.org/w/index.php?title=Torre_de_Tokio&oldid=147519460">Torre de Tokio</a></cite> (2023)</p>
             <figure class="video">
-                <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2MWC754oelM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div>                    
+                    <iframe frameborder="0" class="lazyload" allowfullscreen="" data-src="https://www.youtube.com/embed/2MWC754oelM"></iframe>
                 </div>
                 <figcaption>Torre de Tokio vista de noche</figcaption>
             </figure>

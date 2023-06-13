@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="fontawesome/css/fontawesome.css">
     <link rel="stylesheet" href="fontawesome/css/solid.css">
-    <script type="module" src="app.js"></script>
+    <script async type="module" src="app.js"></script>
 </head>
 <body>
     <header>
@@ -62,11 +62,11 @@
             <div id="box-detail">
                 <picture>
                     <source srcset="img/detalle/07.jpg?as=avif" type="image/avif">                    
-                    <img src="img/detalle/07.jpg" alt="Palacio Meiji">
+                    <img src="img/detalle/07.jpg" alt="Palacio Meiji" loading="lazy">
                 </picture>
                 <picture>                    
                     <source srcset="img/detalle/08.jpg?as=webp" type="image/webp">
-                    <img src="img/detalle/08.jpg" alt="Fujimi-yagura">
+                    <img src="img/detalle/08.jpg" alt="Fujimi-yagura" loading="lazy">
                 </picture>
             </div>
             <h3>División</h3>
@@ -86,8 +86,8 @@
             <p class="source"><i class="fa-solid fa-angles-right"></i> <cite><a href="https://es.wikipedia.org/w/index.php?title=K%C5%8Dkyo&oldid=148174692"><span lang="ja-Latn">Kōkyo</span></a></cite> (2023)</p>
             <p class="source"><i class="fa-solid fa-angles-right"></i> <cite><a href="https://en.wikipedia.org/w/index.php?title=Tokyo_Imperial_Palace&oldid=1146218973"><span lang="en">Tokyo Imperial Palace</span></a></cite> (2023)</p>
             <figure class="video">
-                <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8Wc3gVxXm4w" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div>                    
+                    <iframe frameborder="0" class="lazyload" allowfullscreen="" data-src="https://www.youtube.com/embed/8Wc3gVxXm4w"></iframe>
                 </div>
                 <figcaption>Jardines del este del Palacio Imperial</figcaption>
             </figure>

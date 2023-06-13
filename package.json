@@ -1,5 +1,5 @@
 {
-  "name": "pec1",
+  "name": "pec3",
   "source": "src/index.html",
   "browserslist": "> 0.2%, last 2 versions, not dead",
   "scripts": {
@@ -16,6 +16,7 @@
     "sharp": "^0.31.3"
   },
   "dependencies": {
+    "lazysizes": "^5.3.2",
     "moment-timezone": "^0.5.43"
   }
 }

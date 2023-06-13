@@ -1,3 +1,9 @@
+/* Lazy */
+
+import "lazysizes";
+
+
+
 /* Time */
 
 import moment from "moment-timezone";

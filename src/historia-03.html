@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="fontawesome/css/fontawesome.css">
     <link rel="stylesheet" href="fontawesome/css/solid.css">
-    <script type="module" src="app.js"></script>
+    <script async type="module" src="app.js"></script>
 </head>
 <body>
     <header>
@@ -62,11 +62,11 @@
             <div id="box-detail">
                 <picture>
                     <source srcset="img/detalle/05.jpg?as=avif" type="image/avif">
-                    <img src="img/detalle/05.jpg" alt="Tokio tras la guerra">
+                    <img src="img/detalle/05.jpg" alt="Tokio tras la guerra" loading="lazy">
                 </picture>
                 <picture>
                     <source srcset="img/detalle/06.jpg?as=webp" type="image/webp">
-                    <img src="img/detalle/06.jpg" alt="Rascacielos de Shinjuku">
+                    <img src="img/detalle/06.jpg" alt="Rascacielos de Shinjuku" loading="lazy">
                 </picture>
             </div>
             <h3>Línea de tiempo</h3>
@@ -90,7 +90,7 @@
             <p class="source"><i class="fa-solid fa-angles-right"></i> <cite><a href="https://es.wikipedia.org/w/index.php?title=Tokio&oldid=149796187">Tokio</a></cite> (2023)</p>
             <figure class="video">
                 <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Dt5bBXrAQiY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe frameborder="0" class="lazyload" allowfullscreen="" data-src="https://www.youtube.com/embed/Dt5bBXrAQiY"></iframe>
                 </div>
                 <figcaption>Cruce de Shibuya</figcaption>
             </figure>
