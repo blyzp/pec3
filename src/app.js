@@ -1,21 +1,3 @@
-/* Lazy */
-
-import "lazysizes";
-
-
-
-/* Time */
-
-import moment from "moment-timezone";
-
-function showTime() {
-    document.getElementById("time").innerHTML = moment().tz("Asia/Tokyo").format("HH:mm:ss");
-}
-
-setInterval(showTime, 1000);
-
-
-
 /* Navigation */
 
 const btnNav = document.querySelector("#btn-nav");
@@ -47,6 +29,10 @@ const styleH4 = document.querySelectorAll("#box-nav li");
 const styleF1 = document.querySelector("footer");
 const styleF2 = document.querySelector("footer .sitename");
 const styleM1 = document.querySelector("#box-text");
+const imgDarkAvif = new URL("img/felix-fuchs-NanNLo5kt_Y-unsplash.avif", import.meta.url);
+const imgLightAvif = new URL("img/victor-martin-6lI6YnLC9-k-unsplash.avif", import.meta.url);
+const imgDarkMobAvif = new URL("img/felix-fuchs-NanNLo5kt_Y-unsplash-m.avif", import.meta.url);
+const imgLightMobAvif = new URL("img/victor-martin-6lI6YnLC9-k-unsplash-m.avif", import.meta.url);
 const imgDark = new URL("img/felix-fuchs-NanNLo5kt_Y-unsplash.jpg", import.meta.url);
 const imgLight = new URL("img/victor-martin-6lI6YnLC9-k-unsplash.jpg", import.meta.url);
 const imgDarkMob = new URL("img/felix-fuchs-NanNLo5kt_Y-unsplash-m.jpg", import.meta.url);
@@ -86,9 +72,9 @@ function toggleTheme() {
             styleA1.style = "background-color: black; color: white;";
         } else {            
             if (mediaQuery.matches) {
-                styleA1.style = `background-color: black; background-image: url(${imgDarkMob}); color: white;`;
+                styleA1.style = `background-color: black; background-image: image-set(url(${imgDarkMobAvif}) /* type('image/avif') */, url(${imgDarkMob}) /* type('image/jpeg') */); color: white;`;
             } else {
-                styleA1.style = `background-color: black; background-image: url(${imgDark}); color: white;`;
+                styleA1.style = `background-color: black; background-image: image-set(url(${imgDarkAvif}) /* type('image/avif') */, url(${imgDark}) /* type('image/jpeg') */); color: white;`;
             }
         }
         toggleDark();
@@ -98,9 +84,9 @@ function toggleTheme() {
             styleA1.style = "background-color: white; color: darkslategray;"; 
         } else {            
             if (mediaQuery.matches) {
-                styleA1.style = `background-color: white; background-image: url(${imgLightMob}); color: darkslategray;`;
+                styleA1.style = `background-color: white; background-image: image-set(url(${imgLightMobAvif}) /* type('image/avif') */, url(${imgLightMob}) /* type('image/jpeg') */); color: darkslategray;`;
             } else {
-                styleA1.style = `background-color: white; background-image: url(${imgLight}); color: darkslategray;`;
+                styleA1.style = `background-color: white; background-image: image-set(url(${imgLightAvif}) /* type('image/avif') */, url(${imgLight}) /* type('image/jpeg') */); color: darkslategray;`;
             }
         }  
         toggleLight();

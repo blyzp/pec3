@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tokio | Torre de Tokio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="fontawesome/css/fontawesome.css">
-    <link rel="stylesheet" href="fontawesome/css/solid.css">
+    <link rel="preload" href="fontawesome/css/fontawesome.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="fontawesome/css/fontawesome.css"></noscript>
+    <link rel="preload" href="fontawesome/css/solid.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="fontawesome/css/solid.css"></noscript>    
     <script async type="module" src="app.js"></script>
+    <script async type="module" src="ext.js"></script>
 </head>
 <body>
     <header>
@@ -18,7 +24,7 @@
                     <div class="box-logo">
                         <picture>
                             <source type="image/svg+xml" srcset="img/logo.svg">
-                            <img src="img/logo-1x.png" srcset="img/logo-2x.png 2x" alt="">
+                            <img src="img/logo-1x.png" srcset="img/logo-2x.png 2x" alt="" width="44" height="44">
                         </picture>
                     </div>
                     <div>
@@ -48,9 +54,11 @@
             <h2>Torre de Tokio</h2>
             <figure>
                 <picture>
+                    <source media="(max-width: 640px)" srcset="img/leo-rivas-a08PC2Rxl5U-unsplash-m.jpg?as=avif" type="image/avif">
                     <source media="(max-width: 640px)" srcset="img/leo-rivas-a08PC2Rxl5U-unsplash-m.jpg">
+                    <source media="(min-width: 641px)" srcset="img/leo-rivas-a08PC2Rxl5U-unsplash.jpg?as=avif" type="image/avif">
                     <source media="(min-width: 641px)" srcset="img/leo-rivas-a08PC2Rxl5U-unsplash.jpg">
-                    <img src="img/leo-rivas-a08PC2Rxl5U-unsplash.jpg" alt="Torre de Tokio, Minato">
+                    <img src="img/leo-rivas-a08PC2Rxl5U-unsplash.jpg" alt="Torre de Tokio, Minato" width="640" height="853">
                 </picture>
                 <figcaption>
                     Vista de la Torre de Tokio entre edificios
@@ -62,11 +70,11 @@
             <div id="box-detail">
                 <picture>
                     <source srcset="img/detalle/11.jpg?as=avif" type="image/avif">
-                    <img src="img/detalle/11.jpg" alt="Torre de Tokio, 1961" loading="lazy">
+                    <img src="img/detalle/11.jpg" alt="Torre de Tokio, 1961" width="250" height="250" loading="lazy">
                 </picture>
                 <picture>                    
                     <source srcset="img/detalle/12.jpg?as=webp" type="image/webp">
-                    <img src="img/detalle/12.jpg" alt="Torre de Tokio, 2023" loading="lazy">
+                    <img src="img/detalle/12.jpg" alt="Torre de Tokio, 2023" width="250" height="250" loading="lazy">
                 </picture>
             </div>
             <h3>Uso</h3>
@@ -114,7 +122,7 @@
             <div class="box-logo">
                 <picture>
                     <source type="image/svg+xml" srcset="img/logo.svg">
-                    <img src="img/logo-1x.png" srcset="img/logo-2x.png 2x" alt="">
+                    <img src="img/logo-1x.png" srcset="img/logo-2x.png 2x" alt="" width="44" height="44">
                 </picture>
             </div>
             <p class="sitename"><a href="index.html">Tokio</a></p>

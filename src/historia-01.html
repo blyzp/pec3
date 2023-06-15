@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tokio | Fundación de Edo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="fontawesome/css/fontawesome.css">
-    <link rel="stylesheet" href="fontawesome/css/solid.css">
+    <link rel="preload" href="fontawesome/css/fontawesome.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="fontawesome/css/fontawesome.css"></noscript>
+    <link rel="preload" href="fontawesome/css/solid.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="fontawesome/css/solid.css"></noscript>    
     <script async type="module" src="app.js"></script>
+    <script async type="module" src="ext.js"></script>
 </head>
 <body>
     <header>
@@ -18,7 +24,7 @@
                     <div class="box-logo">
                         <picture>
                             <source type="image/svg+xml" srcset="img/logo.svg">
-                            <img src="img/logo-1x.png" srcset="img/logo-2x.png 2x" alt="">
+                            <img src="img/logo-1x.png" srcset="img/logo-2x.png 2x" alt="" width="44" height="44">
                         </picture>
                     </div>
                     <div>
@@ -48,9 +54,11 @@
             <h2>Fundación de Edo</h2>
             <figure>
                 <picture>
+                    <source media="(max-width: 640px)" srcset="img/susann-schuster-nxBfBDDqjjc-unsplash-m.jpg?as=avif" type="image/avif">
                     <source media="(max-width: 640px)" srcset="img/susann-schuster-nxBfBDDqjjc-unsplash-m.jpg">
+                    <source media="(min-width: 641px)" srcset="img/susann-schuster-nxBfBDDqjjc-unsplash.jpg?as=avif" type="image/avif">
                     <source media="(min-width: 641px)" srcset="img/susann-schuster-nxBfBDDqjjc-unsplash.jpg">
-                    <img src="img/susann-schuster-nxBfBDDqjjc-unsplash.jpg" alt="Armadura samurái">
+                    <img src="img/susann-schuster-nxBfBDDqjjc-unsplash.jpg" alt="Armadura samurái" width="640" height="852">
                 </picture>
                 <figcaption>
                     Casco y armadura samurái en el museo Edo-Tokio
@@ -62,11 +70,11 @@
             <div id="box-detail">
                 <picture>
                     <source srcset="img/detalle/01.jpg?as=avif" type="image/avif">
-                    <img src="img/detalle/01.jpg" alt="Castillo Edo" loading="lazy">
+                    <img src="img/detalle/01.jpg" alt="Castillo Edo" width="250" height="250" loading="lazy">
                 </picture>
                 <picture>
                     <source srcset="img/detalle/02.jpg?as=webp" type="image/webp">
-                    <img src="img/detalle/02.jpg" alt="Ieyasu Tokugawa" loading="lazy">
+                    <img src="img/detalle/02.jpg" alt="Ieyasu Tokugawa" width="250" height="250" loading="lazy">
                 </picture>
             </div>
             <h3>Línea de tiempo</h3>
@@ -104,7 +112,7 @@
             <div class="box-logo">
                 <picture>
                     <source type="image/svg+xml" srcset="img/logo.svg">
-                    <img src="img/logo-1x.png" srcset="img/logo-2x.png 2x" alt="">
+                    <img src="img/logo-1x.png" srcset="img/logo-2x.png 2x" alt="" width="44" height="44">
                 </picture>
             </div>
             <p class="sitename"><a href="index.html">Tokio</a></p>

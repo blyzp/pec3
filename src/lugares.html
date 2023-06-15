@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tokio | Lugares de interés</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="fontawesome/css/fontawesome.css">
-    <link rel="stylesheet" href="fontawesome/css/solid.css">
+    <link rel="preload" href="fontawesome/css/fontawesome.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="fontawesome/css/fontawesome.css"></noscript>
+    <link rel="preload" href="fontawesome/css/solid.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="fontawesome/css/solid.css"></noscript>    
     <script async type="module" src="app.js"></script>
+    <script async type="module" src="ext.js"></script>
 </head>
 <body>
     <header>
@@ -18,7 +24,7 @@
                     <div class="box-logo">
                         <picture>
                             <source type="image/svg+xml" srcset="img/logo.svg">
-                            <img src="img/logo-1x.png" srcset="img/logo-2x.png 2x" alt="">
+                            <img src="img/logo-1x.png" srcset="img/logo-2x.png 2x" alt="" width="44" height="44">
                         </picture>
                     </div>
                     <div>
@@ -48,9 +54,11 @@
             <h2>Lugares de interés</h2>
             <figure>
                 <picture>
+                    <source media="(max-width: 640px)" srcset="img/nat-weerawong-y1zCPYTGe_s-unsplash-m.jpg?as=avif" type="image/avif">
                     <source media="(max-width: 640px)" srcset="img/nat-weerawong-y1zCPYTGe_s-unsplash-m.jpg">
+                    <source media="(min-width: 641px)" srcset="img/nat-weerawong-y1zCPYTGe_s-unsplash.jpg?as=avif" type="image/avif">
                     <source media="(min-width: 641px)" srcset="img/nat-weerawong-y1zCPYTGe_s-unsplash.jpg">
-                    <img src="img/nat-weerawong-y1zCPYTGe_s-unsplash.jpg" alt="Estación de Tokio">
+                    <img src="img/nat-weerawong-y1zCPYTGe_s-unsplash.jpg" alt="Estación de Tokio" width="640" height="960">
                 </picture>
                 <figcaption>
                     Vista de la estación de Tokio desde arriba
@@ -58,21 +66,21 @@
             </figure>
             <section>
                 <h3><a href="lugares-01.html">Palacio Imperial</a></h3>
-                <div><a href="lugares-01.html"><img class="thumbnail" srcset="img/categoria/04-m.jpg 60w, img/categoria/04.jpg 75w" sizes="(max-width: 640px) 60px, 75px" src="img/categoria/04.jpg" alt="Palacio Imperial" loading="lazy"></a></div>
+                <div><a href="lugares-01.html"><img class="thumbnail" srcset="img/categoria/04-m.jpg 60w, img/categoria/04.jpg 75w" sizes="(max-width: 640px) 60px, 75px" src="img/categoria/04.jpg" alt="Palacio Imperial" width="75" height="75" loading="lazy"></a></div>
                 <p>Complejo de jardines en Chiyoda que incluye edificios como el palacio principal, las residencias privadas de la familia imperial, una biblioteca, museos y oficinas administrativas.</p>
                 <p><i class="fa-solid fa-angles-right"></i> <a href="lugares-01.html">Leer más</a></p>
             </section>
             <p class="source"><i class="fa-solid fa-angles-right"></i> <cite><a href="https://es.wikipedia.org/w/index.php?title=K%C5%8Dkyo&oldid=148174692"><span lang="ja-Latn">Kōkyo</span></a></cite> (2023)</p>
             <section>
                 <h3><a href="lugares-02.html">Parque Ueno</a></h3>
-                <div><a href="lugares-02.html"><img class="thumbnail" srcset="img/categoria/05-m.jpg 60w, img/categoria/05.jpg 75w" sizes="(max-width: 640px) 60px, 75px" src="img/categoria/05.jpg" alt="Parque Ueno" loading="lazy"></a></div>
+                <div><a href="lugares-02.html"><img class="thumbnail" srcset="img/categoria/05-m.jpg 60w, img/categoria/05.jpg 75w" sizes="(max-width: 640px) 60px, 75px" src="img/categoria/05.jpg" alt="Parque Ueno" width="75" height="75" loading="lazy"></a></div>
                 <p>Parque público localizado en <span lang="ja-Latn">Taitō</span>. Se encuentra donde solía estar el <span lang="ja-Latn">Kan'eiji</span>, un templo asociado de forma cercana con el shogunato Tokugawa.</p>
                 <p><i class="fa-solid fa-angles-right"></i> <a href="lugares-02.html">Leer más</a></p>
             </section>
             <p class="source"><i class="fa-solid fa-angles-right"></i> <cite><a href="https://es.wikipedia.org/w/index.php?title=Parque_Ueno&oldid=149839313">Parque Ueno</a></cite> (2023)</p>
             <section>
                 <h3><a href="lugares-03.html">Torre de Tokio</a></h3>
-                <div><a href="lugares-03.html"><img class="thumbnail" srcset="img/categoria/06-m.jpg 60w, img/categoria/06.jpg 75w" sizes="(max-width: 640px) 60px, 75px" src="img/categoria/06.jpg" alt="Torre de Tokio" loading="lazy"></a></div>
+                <div><a href="lugares-03.html"><img class="thumbnail" srcset="img/categoria/06-m.jpg 60w, img/categoria/06.jpg 75w" sizes="(max-width: 640px) 60px, 75px" src="img/categoria/06.jpg" alt="Torre de Tokio" width="75" height="75" loading="lazy"></a></div>
                 <p>Torre de telecomunicaciones y de observación situada en la zona del parque Shiba de Minato.</p>
                 <p><i class="fa-solid fa-angles-right"></i> <a href="lugares-03.html">Leer más</a></p>
             </section>
@@ -84,7 +92,7 @@
             <div class="box-logo">
                 <picture>
                     <source type="image/svg+xml" srcset="img/logo.svg">
-                    <img src="img/logo-1x.png" srcset="img/logo-2x.png 2x" alt="">
+                    <img src="img/logo-1x.png" srcset="img/logo-2x.png 2x" alt="" width="44" height="44">
                 </picture>
             </div>
             <p class="sitename"><a href="index.html">Tokio</a></p>

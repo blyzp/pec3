@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tokio | Historia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="fontawesome/css/fontawesome.css">
-    <link rel="stylesheet" href="fontawesome/css/solid.css">
+    <link rel="preload" href="fontawesome/css/fontawesome.css" as="style" onload="this.onload=null;this.rel='stylesheet'">    
+    <noscript><link rel="stylesheet" href="fontawesome/css/fontawesome.css"></noscript>
+    <link rel="preload" href="fontawesome/css/solid.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="fontawesome/css/solid.css"></noscript>    
     <script async type="module" src="app.js"></script>
+    <script async type="module" src="ext.js"></script>
 </head>
 <body>
     <header>
@@ -18,7 +24,7 @@
                     <div class="box-logo">
                         <picture>
                             <source type="image/svg+xml" srcset="img/logo.svg">
-                            <img src="img/logo-1x.png" srcset="img/logo-2x.png 2x" alt="">
+                            <img src="img/logo-1x.png" srcset="img/logo-2x.png 2x" alt="" width="44" height="44">
                         </picture>
                     </div>
                     <div>
@@ -48,9 +54,11 @@
             <h2>Historia</h2>
             <figure>
                 <picture>
+                    <source media="(max-width: 640px)" srcset="img/yu-kato-cddaZDt6uRw-unsplash-m.jpg?as=avif" type="image/avif">
                     <source media="(max-width: 640px)" srcset="img/yu-kato-cddaZDt6uRw-unsplash-m.jpg">
+                    <source media="(min-width: 641px)" srcset="img/yu-kato-cddaZDt6uRw-unsplash.jpg?as=avif" type="image/avif">
                     <source media="(min-width: 641px)" srcset="img/yu-kato-cddaZDt6uRw-unsplash.jpg">
-                    <img src="img/yu-kato-cddaZDt6uRw-unsplash.jpg" alt="Sensō-ji, Taitō">
+                    <img src="img/yu-kato-cddaZDt6uRw-unsplash.jpg" alt="Sensō-ji, Taitō" width="640" height="853">
                 </picture>
                 <figcaption>
                     Pagoda del templo <span lang="ja-Latn">Sensō-ji</span> y flores de cerezo
@@ -58,19 +66,19 @@
             </figure>
             <section>
                 <h3><a href="historia-01.html">Fundación de Edo</a></h3>                
-                <div><a href="historia-01.html"><img class="thumbnail" srcset="img/categoria/01-m.jpg 60w, img/categoria/01.jpg 75w" sizes="(max-width: 640px) 60px, 75px" src="img/categoria/01.jpg" alt="Fundación de Edo" loading="lazy"></a></div>
+                <div><a href="historia-01.html"><img class="thumbnail" srcset="img/categoria/01-m.jpg 60w, img/categoria/01.jpg 75w" sizes="(max-width: 640px) 60px, 75px" src="img/categoria/01.jpg" alt="Fundación de Edo" width="75" height="75" loading="lazy"></a></div>
                 <p>Se considera que la fundación formal de Tokio fue en 1457, cuando <span lang="ja-Latn">Ōta Dōkan</span> construyó el castillo Edo, por lo que el área que rodeaba el castillo comenzó a ser llamado de la misma forma.</p>
                 <p><i class="fa-solid fa-angles-right"></i> <a href="historia-01.html">Leer más</a></p>
             </section>
             <section>
                 <h3><a href="historia-02.html">Siglo XIX</a></h3>
-                <div><a href="historia-02.html"><img class="thumbnail" srcset="img/categoria/02-m.jpg 60w, img/categoria/02.jpg 75w" sizes="(max-width: 640px) 60px, 75px" src="img/categoria/02.jpg" alt="Siglo XIX" loading="lazy"></a></div>
+                <div><a href="historia-02.html"><img class="thumbnail" srcset="img/categoria/02-m.jpg 60w, img/categoria/02.jpg 75w" sizes="(max-width: 640px) 60px, 75px" src="img/categoria/02.jpg" alt="Siglo XIX" width="75" height="75" loading="lazy"></a></div>
                 <p>A fines de 1868, con el ocaso del shogunato y el inicio de la era Meiji, el emperador se mudó al castillo Edo, convirtiéndolo en el Palacio Imperial y estableciendo el cambio de nombre de Edo a Tokio.</p>
                 <p><i class="fa-solid fa-angles-right"></i> <a href="historia-02.html">Leer más</a></p>
             </section>
             <section>
                 <h3><a href="historia-03.html">Siglo XX</a></h3>
-                <div><a href="historia-03.html"><img class="thumbnail" srcset="img/categoria/03-m.jpg 60w, img/categoria/03.jpg 75w" sizes="(max-width: 640px) 60px, 75px" src="img/categoria/03.jpg" alt="Siglo XX" loading="lazy"></a></div>
+                <div><a href="historia-03.html"><img class="thumbnail" srcset="img/categoria/03-m.jpg 60w, img/categoria/03.jpg 75w" sizes="(max-width: 640px) 60px, 75px" src="img/categoria/03.jpg" alt="Siglo XX" width="75" height="75" loading="lazy"></a></div>
                 <p>Tokio experimentó el denominado milagro económico durante las décadas de 1950 y 1960. Esta prosperidad transformó a un país devastado por la guerra en la segunda economía del mundo en menos de 20 años.</p>
                 <p><i class="fa-solid fa-angles-right"></i> <a href="historia-03.html">Leer más</a></p>
             </section>
@@ -82,7 +90,7 @@
             <div class="box-logo">
                 <picture>
                     <source type="image/svg+xml" srcset="img/logo.svg">
-                    <img src="img/logo-1x.png" srcset="img/logo-2x.png 2x" alt="">
+                    <img src="img/logo-1x.png" srcset="img/logo-2x.png 2x" alt="" width="44" height="44">
                 </picture>
             </div>
             <p class="sitename"><a href="index.html">Tokio</a></p>
