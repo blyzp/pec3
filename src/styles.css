@@ -149,6 +149,15 @@ h3 {
     margin-bottom : 20px;
 }
 
+#box-text section p:last-of-type {
+    display: flex;
+    align-items: center; 
+}
+
+#box-text section p:last-of-type svg {
+    margin-right: 4px;
+}
+
 #box-text p {
     line-height: 1.5;
     margin-bottom: 20px;
@@ -159,8 +168,16 @@ h3 {
 }
 
 #box-text p.source {
+    display: flex;
+    align-items:center;
+    justify-content: right;
+
     font-size: 0.8rem;
     text-align: right;
+}
+
+#box-text p.source cite {
+    margin-right: 3px;
 }
 
 #box-text li {
@@ -223,7 +240,6 @@ img {
     max-width: 100%;
     height: auto;
 }
-
 
 #map {
     width: 440px;
@@ -492,6 +508,11 @@ footer li ul li a {
 
     #box-clip #myClip {
         transform: scale(0.7) translate(2px, 3px);
+    }
+
+    img.clip {
+        width: 123px;
+        height: 120px;
     }
 
     #map {
